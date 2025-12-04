@@ -23,6 +23,8 @@ public class Ahorros implements OperacionesBancarias{
             throw new IllegalArgumentException("Monto negativo");
         }
         saldo += monto;
+        System.out.println("-- DEPOSITO CON EXITO -- ");
+        System.out.println("Monto: " + monto + "\nNuevo saldo: " + saldo);
     }
 
     @Override
